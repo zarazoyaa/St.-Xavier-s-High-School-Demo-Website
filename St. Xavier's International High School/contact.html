@@ -1,166 +1,299 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | St. Xavier's School</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | St. Xavier's High School</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
 <body>
-
-<header class="header">
-    <nav class="navbar">
-        <a href="index.html" class="logo">
-            <span class="logo-icon">SX</span>
-            <span>ST. XAVIER'S<br><small>SCHOOL</small></span>
-        </a>
-
-        <button class="menu-toggle" id="menuToggle"
-                aria-label="Toggle navigation" aria-expanded="false">☰</button>
-
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-
-        <a href="admissions.html" class="nav-btn">Apply Now</a>
-    </nav>
+<header class="site-header">
+<nav class="navbar container">
+<a class="brand" href="index.html"><span class="brand-emblem">SX</span><span class="brand-text"><strong>ST. XAVIER'S</strong><small>HIGH SCHOOL</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="academics.html">Academics</a></li>
+<li><a href="facilities.html">Facilities</a></li>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="application.html">Application</a></li>
+<li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html" class="current-page" aria-current="page">Contact</a></li>
+<li class="login-icon-item">
+    <button type="button"
+            class="login-icon-btn"
+            id="openAuth"
+            aria-label="Login or Sign Up"
+            title="Login / Sign Up">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+        </svg>
+    </button>
+</li>
+</ul>
+<a class="nav-apply" href="application.html">Apply Now ↗</a>
+</nav>
 </header>
-
 <main>
-    <section class="inner-hero contact-hero">
-        <div class="inner-hero-content">
-            <span class="section-label">We Are Here to Help</span>
-            <h1>Contact Us</h1>
-            <p>We would be happy to hear from you.</p>
-        </div>
-    </section>
+<section class="inner-hero">
+<div class="container">
+<span class="eyebrow">CONTACT ST. XAVIER'S</span>
+<h1>Let's start a <em>conversation.</em></h1>
+<p>Have a question about admissions, academics or school life? We're here to help.</p>
+<div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+</div>
+</section>
 
-    <section class="section-padding">
-        <div class="section-heading">
-            <span class="section-label">Get In Touch</span>
-            <h2>Let's Start a Conversation</h2>
-            <p>Have a question about admissions, academics or school activities?
-               Send us an enquiry.</p>
-        </div>
+<section class="section section-ivory">
+<div class="container contact-layout">
+<form class="contact-form" id="contactForm">
+<span class="eyebrow">SEND AN ENQUIRY</span>
+<h2>How can we help?</h2>
+<p>Share your details and the school team can guide you further.</p>
+<div class="form-row">
+<div class="form-field"><label for="fullName">Full Name *</label><input id="fullName" name="fullName" required></div>
+<div class="form-field"><label for="email">Email Address *</label><input id="email" name="email" type="email" required></div>
+</div>
+<div class="form-row">
+<div class="form-field"><label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" type="tel" required></div>
+<div class="form-field">
+<label for="topic">Enquiry Topic *</label>
+<select id="topic" name="topic" required>
+<option value="">Select a topic</option>
+<option>Admissions</option>
+<option>Academics</option>
+<option>Campus Visit</option>
+<option>Events & Activities</option>
+<option>Parent Support</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div class="form-field"><label for="message">Your Message *</label><textarea id="message" name="message" rows="5" placeholder="Write your enquiry..." required></textarea></div>
+<button class="btn btn-dark" type="submit">Send Enquiry ↗</button>
+<p id="formMessage" class="form-status" role="status"></p>
+</form>
 
-        <div class="contact-layout">
-            <div class="contact-details">
-                <div class="contact-detail-card">
-                    <span class="contact-icon">⌖</span>
-                    <div>
-                        <h3>Our Location</h3>
-                        <p>St. Xavier's School<br>Bhubaneswar, Odisha, India</p>
-                    </div>
-                </div>
 
-                <div class="contact-detail-card">
-                    <span class="contact-icon">☎</span>
-                    <div>
-                        <h3>Phone Number</h3>
-                        <p>+91 98765 43210</p>
-                    </div>
-                </div>
+<aside class="contact-details">
+  <span class="eyebrow">GET IN TOUCH</span>
+  <h2>We'd love to hear from you.</h2>
+  <p>Reach out to our school office for information and assistance.</p>
 
-                <div class="contact-detail-card">
-                    <span class="contact-icon">✉</span>
-                    <div>
-                        <h3>Email Address</h3>
-                        <p>info@stxaviers.example</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail-card">
-                    <span class="contact-icon">◷</span>
-                    <div>
-                        <h3>Office Hours</h3>
-                        <p>Monday – Saturday<br>9:00 AM – 4:00 PM</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-form-box">
-                <h2>Send an Enquiry</h2>
-                <p>Fill in the details below and our team can assist you.</p>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" name="fullName"
-                                   placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email"
-                                   placeholder="Enter your email" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone"
-                                   placeholder="Enter your phone number" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Enquiry Type</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select an option</option>
-                                <option>Admission Enquiry</option>
-                                <option>Academic Information</option>
-                                <option>General Enquiry</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5"
-                                  placeholder="Write your message here..."
-                                  required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-gold form-submit">
-                        Submit Enquiry
-                    </button>
-
-                    <p id="formMessage" class="form-message" aria-live="polite"></p>
-                </form>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-    <div class="footer-content">
-        <div>
-            <h3>ST. XAVIER'S SCHOOL</h3>
-            <p>Inspiring Excellence. Empowering Futures.</p>
-        </div>
-        <div>
-            <h4>Quick Links</h4>
-            <a href="about.html">About Us</a>
-            <a href="academics.html">Academics</a>
-            <a href="admissions.html">Admissions</a>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <p>Email: info@stxaviers.example</p>
-            <p>Phone: +91 98765 43210</p>
-        </div>
+  <div class="contact-detail">
+    <b>⌖</b>
+    <div>
+      <h3>Campus Address</h3>
+      <p>At Jiridamali, PO Kamakhyanagar</p>
+      <small>Dhenkanal, Odisha – 759018</small>
     </div>
-    <p class="copyright">© 2026 St. Xavier's School. All rights reserved.</p>
-</footer>
+  </div>
 
-<script src="js/script.js"></script>
+  <div class="contact-detail">
+    <b>✉</b>
+    <div>
+      <h3>Email Address</h3>
+      <p>info@stxaviers-demo.example</p>
+    </div>
+  </div>
+
+  <div class="contact-detail">
+    <b>☎</b>
+    <div>
+      <h3>Phone / WhatsApp</h3>
+      <p>+91 98765 43210</p>
+    </div>
+  </div>
+
+  <div class="contact-detail">
+    <b>◷</b>
+    <div>
+      <h3>Office Hours</h3>
+      <p>Monday – Saturday</p>
+      <small>9:00 AM – 4:00 PM (demo timings)</small>
+    </div>
+  </div>
+
+  <div class="contact-social">
+    <h3>Connect With Us</h3>
+    <p>Follow our school activities and announcements.</p>
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+  </div>
+</aside>
+
+</div>
+</section>
+
+<section class="section section-white">
+<div class="container section-heading">
+<span class="eyebrow">HOW WE CAN HELP</span>
+<h2>Support at <em>every step.</em></h2>
+</div>
+<div class="container contact-help-grid">
+<article><b>01</b><h3>Admissions</h3><p>Information about applications, eligibility and required documents.</p></article>
+<article><b>02</b><h3>Academics</h3><p>Guidance about learning pathways and academic programmes.</p></article>
+<article><b>03</b><h3>Events</h3><p>Information about school celebrations, activities and events.</p></article>
+<article><b>04</b><h3>Parent Support</h3><p>Communication and general assistance for parents and guardians.</p></article>
+</div>
+</section>
+
+<section class="section section-ivory">
+<div class="container section-heading">
+<span class="eyebrow">FIND OUR CAMPUS</span>
+<h2>We look forward to <em>welcoming you.</em></h2>
+<p>Add the verified school location before publishing.</p>
+</div>
+
+<div class="container map-placeholder">
+  <div class="map-content">
+    <span class="eyebrow">CAMPUS LOCATION</span>
+    <h3>St. Xavier's High School</h3>
+    <p>At Jiridamali, PO Kamakhyanagar, Dhenkanal, Odisha – 759018</p>
+    <a class="text-link"
+       href="https://www.google.com/maps/search/?api=1&query=St+Xavier+High+School+Jiridamali+Kamakhyanagar+Dhenkanal+Odisha"
+       target="_blank" rel="noopener">
+       Get Directions on Google Maps ↗
+    </a>
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps?q=St%20Xavier%20High%20School%20Jiridamali%20Kamakhyanagar%20Dhenkanal%20Odisha&output=embed"
+    width="100%"
+    height="400"
+    style="border:0;"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Google Maps location for St. Xavier's High School">
+  </iframe>
+</div>
+
+<div>
+<span class="eyebrow">CAMPUS LOCATION</span>
+<h3>St. Xavier's High School</h3>
+<p>Google Maps will appear here after the school address is confirmed.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div><a class="brand brand-footer" href="index.html"><span class="brand-emblem">SX</span><span class="brand-text"><strong>ST. XAVIER'S</strong><small>HIGH SCHOOL</small></span></a><p>Learning • Character • Confidence</p></div>
+<div><h3>Explore</h3><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="facilities.html">Facilities</a><a href="gallery.html">Gallery</a></div>
+<div><h3>Admissions</h3><a href="admissions.html">Admission Process</a><a href="application.html">Apply Now</a><a href="mandatory-disclosure.html">Mandatory Disclosure</a></div>
+
+<div>
+  <h3>Contact</h3>
+  <p>At Jiridamali, PO Kamakhyanagar, Dhenkanal, Odisha – 759018</p>
+  <p>Phone: +91 98765 43210</p>
+  <p>Email: info@stxaviers-demo.example</p>
+  <a href="contact.html">Contact our team ↗</a>
+</div>
+
+<div class="container footer-bottom">© <span id="currentYear"></span> St. Xavier's High School. All rights reserved.</div>
+</footer>
+<!-- LOGIN / SIGN UP POPUP -->
+<div class="auth-overlay" id="authOverlay">
+
+    <div class="auth-modal">
+
+        <button type="button" class="auth-close" id="closeAuth">
+            &times;
+        </button>
+
+        <div class="auth-heading">
+
+            <span class="brand-emblem">SX</span>
+
+            <span class="eyebrow">
+                ST. XAVIER'S HIGH SCHOOL
+            </span>
+
+            <h2 id="authTitle">Welcome Back</h2>
+
+            <p id="authSubtitle">
+                Login to continue to your account.
+            </p>
+
+        </div>
+
+        <div class="auth-tabs">
+
+            <button type="button" class="auth-tab active" id="loginTab">
+                Login
+            </button>
+
+            <button type="button" class="auth-tab" id="signupTab">
+                Sign Up
+            </button>
+
+        </div>
+
+        <form id="authForm">
+
+            <div class="auth-field" id="nameField" hidden>
+                <label for="authName">Full Name</label>
+                <input type="text" id="authName"
+                       placeholder="Enter your full name">
+            </div>
+
+            <div class="auth-field">
+                <label for="authEmail">Email Address</label>
+                <input type="email" id="authEmail"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="auth-field">
+                <label for="authPassword">Password</label>
+                <input type="password" id="authPassword"
+                       placeholder="Enter your password"
+                       minlength="6" required>
+            </div>
+
+            <div class="auth-field" id="confirmField" hidden>
+                <label for="authConfirm">Confirm Password</label>
+                <input type="password" id="authConfirm"
+                       placeholder="Confirm your password">
+            </div>
+
+            <button type="submit" class="auth-submit" id="authSubmit">
+                Login
+            </button>
+
+            <p class="auth-message" id="authMessage"
+               role="status" aria-live="polite"></p>
+
+        </form>
+
+        <p class="auth-terms">
+            By continuing, you agree to the school's terms and privacy policy.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20St.%20Xavier%27s%20High%20School."
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact us on WhatsApp"
+   title="Chat with us on WhatsApp">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="currentColor"
+        d="M16 .8A15.1 15.1 0 0 0 3.1 23.7L1 31l7.5-2A15.1 15.1 0 1 0 16 .8Zm0 27.5a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.4 1.2 1.2-4.3-.3-.5A12.4 12.4 0 1 1 16 28.3Zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4 6.3 5.6.9.4 1.6.6 2.1.8.9.3 1.7.3 2.3.2.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5Z"/>
+    </svg>
+
+</a>
 </body>
 </html>

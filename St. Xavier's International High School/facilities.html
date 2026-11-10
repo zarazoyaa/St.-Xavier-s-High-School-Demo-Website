@@ -1,158 +1,199 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilities | St. Xavier's School</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilities | St. Xavier's High School</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
 <body>
-
-<header class="header">
-    <nav class="navbar">
-        <a href="index.html" class="logo">
-            <span class="logo-icon">SX</span>
-            <span>ST. XAVIER'S<br><small>SCHOOL</small></span>
-        </a>
-
-        <button class="menu-toggle" id="menuToggle"
-                aria-label="Toggle navigation" aria-expanded="false">☰</button>
-
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="facilities.html" class="active">Facilities</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <a href="admissions.html" class="nav-btn">Apply Now</a>
-    </nav>
+<header class="site-header">
+<nav class="navbar container">
+<a class="brand" href="index.html"><span class="brand-emblem">SX</span><span class="brand-text"><strong>ST. XAVIER'S</strong><small>HIGH SCHOOL</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="academics.html">Academics</a></li>
+<li><a href="facilities.html" class="current-page" aria-current="page">Facilities</a></li>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="application.html">Application</a></li>
+<li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li class="login-icon-item">
+    <button type="button"
+            class="login-icon-btn"
+            id="openAuth"
+            aria-label="Login or Sign Up"
+            title="Login / Sign Up">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+        </svg>
+    </button>
+</li>
+</ul>
+<a class="nav-apply" href="application.html">Apply Now ↗</a>
+</nav>
 </header>
-
 <main>
-    <section class="inner-hero facilities-hero">
-        <div class="inner-hero-content">
-            <span class="section-label">A Better Learning Environment</span>
-            <h1>Our Facilities</h1>
-            <p>Spaces that encourage learning, creativity and overall development.</p>
-        </div>
-    </section>
+<section class="inner-hero">
+<div class="container">
+<span class="eyebrow">CAMPUS LIFE</span>
+<h1>Explore. Discover. <em>Belong.</em></h1>
+<p>Experiences that encourage creativity, collaboration and growth beyond classroom learning.</p>
+<div class="breadcrumb"><a href="index.html">Home</a> / Facilities</div>
+</div>
+</section>
 
-    <section class="section-padding">
-        <div class="section-heading">
-            <span class="section-label">Campus Life</span>
-            <h2>Designed for Learning and Growth</h2>
-            <p>A supportive campus environment helps students explore
-               their interests and develop new skills.</p>
-        </div>
+<section class="section section-ivory">
+<div class="container section-heading">
+<span class="eyebrow">BEYOND THE CLASSROOM</span>
+<h2>A world of <em>possibilities.</em></h2>
+<p>Explore the activities and learning spaces that can enrich school life.</p>
+</div>
+<div class="container facility-grid">
+<article class="facility-card">
+<div class="facility-image sports"></div>
+<div><span>01 / PHYSICAL DEVELOPMENT</span><h3>Sports & Games</h3><p>Team games and physical activities encourage fitness, discipline, sportsmanship and leadership.</p></div>
+</article>
+<article class="facility-card">
+<div class="facility-image arts"></div>
+<div><span>02 / CREATIVITY</span><h3>Art & Cultural Activities</h3><p>Music, dance, drawing and cultural events encourage expression and creativity.</p></div>
+</article>
+<article class="facility-card">
+<div class="facility-image science"></div>
+<div><span>03 / EXPERIMENTATION</span><h3>Science & Practical Learning</h3><p>Experiments and demonstrations help students explore scientific concepts through practical experiences.</p></div>
+</article>
+<article class="facility-card">
+<div class="facility-image speaking"></div>
+<div><span>04 / CONFIDENCE</span><h3>Public Speaking & Leadership</h3><p>Debates, presentations and group activities help students express themselves with confidence.</p></div>
+</article>
+</div>
+<p class="container small-note">These are proposed activity descriptions inspired by the reference. Confirm which facilities and programmes St. Xavier's actually provides.</p>
+</section>
 
-        <div class="facility-grid">
-            <article class="facility-card">
-                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800"
-                     alt="Bright classroom">
-                <div class="facility-content">
-                    <span>01</span>
-                    <h3>Modern Classrooms</h3>
-                    <p>Comfortable learning spaces designed to support
-                       interaction and focused study.</p>
-                </div>
-            </article>
-
-            <article class="facility-card">
-                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800"
-                     alt="Science laboratory">
-                <div class="facility-content">
-                    <span>02</span>
-                    <h3>Science Laboratories</h3>
-                    <p>Practical learning opportunities that connect
-                       scientific concepts with experiments.</p>
-                </div>
-            </article>
-
-            <article class="facility-card">
-                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800"
-                     alt="Library with bookshelves">
-                <div class="facility-content">
-                    <span>03</span>
-                    <h3>Library</h3>
-                    <p>A reading environment that encourages curiosity,
-                       imagination and independent learning.</p>
-                </div>
-            </article>
-
-            <article class="facility-card">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
-                     alt="Computer and technology workspace">
-                <div class="facility-content">
-                    <span>04</span>
-                    <h3>Computer Education</h3>
-                    <p>Technology-based learning to develop digital
-                       awareness and practical computer skills.</p>
-                </div>
-            </article>
-
-            <article class="facility-card">
-                <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?w=800"
-                     alt="Outdoor sports field">
-                <div class="facility-content">
-                    <span>05</span>
-                    <h3>Sports and Recreation</h3>
-                    <p>Activities that promote fitness, teamwork,
-                       discipline and sportsmanship.</p>
-                </div>
-            </article>
-
-            <article class="facility-card">
-                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800"
-                     alt="Students participating in an activity">
-                <div class="facility-content">
-                    <span>06</span>
-                    <h3>Activity Spaces</h3>
-                    <p>Opportunities for art, music, creativity
-                       and collaborative activities.</p>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="facility-highlight section-padding">
-        <div>
-            <span class="section-label">Beyond the Classroom</span>
-            <h2>Every Space Has a Purpose</h2>
-            <p>We believe that a positive school environment supports
-               not only academic progress but also confidence,
-               creativity and personal growth.</p>
-            <a href="contact.html" class="btn btn-gold">Plan a Visit</a>
-        </div>
-        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1000"
-             alt="School campus building">
-    </section>
+<section class="section section-dark">
+<div class="container final-cta">
+<div><span class="eyebrow">DISCOVER THE CAMPUS</span><h2>Experience school life <em>firsthand.</em></h2><p>Contact the school to enquire about campus visits and available facilities.</p></div>
+<a class="btn btn-gold" href="contact.html">Plan a Visit ↗</a>
+</div>
+</section>
 </main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div><a class="brand brand-footer" href="index.html"><span class="brand-emblem">SX</span><span class="brand-text"><strong>ST. XAVIER'S</strong><small>HIGH SCHOOL</small></span></a><p>Learning • Character • Confidence</p></div>
+<div><h3>Explore</h3><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="facilities.html">Facilities</a><a href="gallery.html">Gallery</a></div>
+<div><h3>Admissions</h3><a href="admissions.html">Admission Process</a><a href="application.html">Apply Now</a><a href="mandatory-disclosure.html">Mandatory Disclosure</a></div>
 
-<footer class="footer">
-    <div class="footer-content">
-        <div>
-            <h3>ST. XAVIER'S SCHOOL</h3>
-            <p>Inspiring Excellence. Empowering Futures.</p>
-        </div>
-        <div>
-            <h4>Quick Links</h4>
-            <a href="about.html">About Us</a>
-            <a href="academics.html">Academics</a>
-            <a href="gallery.html">Gallery</a>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <p>Email: info@stxaviers.example</p>
-            <p>Phone: +91 98765 43210</p>
-        </div>
-    </div>
-    <p class="copyright">© 2026 St. Xavier's School. All rights reserved.</p>
+<div>
+  <h3>Contact</h3>
+  <p>At Jiridamali, PO Kamakhyanagar, Dhenkanal, Odisha – 759018</p>
+  <p>Phone: +91 98765 43210</p>
+  <p>Email: info@stxaviers-demo.example</p>
+  <a href="contact.html">Contact our team ↗</a>
+</div>
+
+<div class="container footer-bottom">© <span id="currentYear"></span> St. Xavier's High School. All rights reserved.</div>
 </footer>
+<!-- LOGIN / SIGN UP POPUP -->
+<div class="auth-overlay" id="authOverlay">
 
-<script src="js/script.js"></script>
+    <div class="auth-modal">
+
+        <button type="button" class="auth-close" id="closeAuth">
+            &times;
+        </button>
+
+        <div class="auth-heading">
+
+            <span class="brand-emblem">SX</span>
+
+            <span class="eyebrow">
+                ST. XAVIER'S HIGH SCHOOL
+            </span>
+
+            <h2 id="authTitle">Welcome Back</h2>
+
+            <p id="authSubtitle">
+                Login to continue to your account.
+            </p>
+
+        </div>
+
+        <div class="auth-tabs">
+
+            <button type="button" class="auth-tab active" id="loginTab">
+                Login
+            </button>
+
+            <button type="button" class="auth-tab" id="signupTab">
+                Sign Up
+            </button>
+
+        </div>
+
+        <form id="authForm">
+
+            <div class="auth-field" id="nameField" hidden>
+                <label for="authName">Full Name</label>
+                <input type="text" id="authName"
+                       placeholder="Enter your full name">
+            </div>
+
+            <div class="auth-field">
+                <label for="authEmail">Email Address</label>
+                <input type="email" id="authEmail"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="auth-field">
+                <label for="authPassword">Password</label>
+                <input type="password" id="authPassword"
+                       placeholder="Enter your password"
+                       minlength="6" required>
+            </div>
+
+            <div class="auth-field" id="confirmField" hidden>
+                <label for="authConfirm">Confirm Password</label>
+                <input type="password" id="authConfirm"
+                       placeholder="Confirm your password">
+            </div>
+
+            <button type="submit" class="auth-submit" id="authSubmit">
+                Login
+            </button>
+
+            <p class="auth-message" id="authMessage"
+               role="status" aria-live="polite"></p>
+
+        </form>
+
+        <p class="auth-terms">
+            By continuing, you agree to the school's terms and privacy policy.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20St.%20Xavier%27s%20High%20School."
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact us on WhatsApp"
+   title="Chat with us on WhatsApp">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="currentColor"
+        d="M16 .8A15.1 15.1 0 0 0 3.1 23.7L1 31l7.5-2A15.1 15.1 0 1 0 16 .8Zm0 27.5a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.4 1.2 1.2-4.3-.3-.5A12.4 12.4 0 1 1 16 28.3Zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4 6.3 5.6.9.4 1.6.6 2.1.8.9.3 1.7.3 2.3.2.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5Z"/>
+    </svg>
+
+</a>
 </body>
 </html>
