@@ -5,199 +5,449 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>St. Xavier's School | Excellence in Education</title>
-
-    <meta name="description"
-          content="Welcome to St. Xavier's School. Discover quality education, academic excellence and holistic development.">
+    <title>St. Xavier's High School | Home</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="navbar container">
+<!-- ================= HEADER ================= -->
 
-            <a href="index.html" class="logo">
-                <span class="logo-icon">SX</span>
-                <span>
-                    <strong>ST. XAVIER'S</strong>
-                    <small>EXCELLENCE IN EDUCATION</small>
-                </span>
-            </a>
+<header class="site-header">
 
-            <button class="menu-toggle" id="menuToggle"
-                    aria-label="Toggle navigation"
-                    aria-expanded="false">
-                ☰
-            </button>
+    <nav class="navbar container">
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <a class="brand" href="index.html">
+            <span class="brand-emblem">SX</span>
 
-            <a href="admissions.html" class="nav-btn">
-                Apply Now →
-            </a>
+            <span class="brand-text">
+                <strong>ST. XAVIER'S</strong>
+                <small>HIGH SCHOOL</small>
+            </span>
+        </a>
 
-        </nav>
-    </header>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="navLinks">
+            ☰
+        </button>
 
-    <!-- Hero Section -->
-    <main>
+        <ul class="nav-links" id="navLinks">
 
-        <section class="hero">
-            <div class="hero-overlay"></div>
+            <li>
+                <a href="index.html"
+                   class="current-page"
+                   aria-current="page">Home</a>
+            </li>
 
-            <div class="hero-content container">
+            <li><a href="about.html">About Us</a></li>
 
-                <span class="hero-tag">
-                    WELCOME TO ST. XAVIER'S
-                </span>
+            <li><a href="academics.html">Academics</a></li>
 
-                <h1>
-                    Shaping Minds.<br>
-                    Building <span>Futures.</span>
-                </h1>
+            <li><a href="facilities.html">Facilities</a></li>
 
-                <p>
-                    Empowering students with knowledge,
-                    values and confidence to achieve
-                    excellence in every field of life.
-                </p>
+            <li><a href="admissions.html">Admissions</a></li>
 
-                <div class="hero-buttons">
-                    <a href="about.html" class="btn btn-gold">
-                        Discover Our School →
-                    </a>
+            <li><a href="application.html">Application</a></li>
 
-                    <a href="admissions.html" class="btn btn-outline">
-                        Explore Admissions
-                    </a>
-                </div>
+            <li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
 
-            </div>
+            <li><a href="gallery.html">Gallery</a></li>
 
-        </section>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="login-icon-item">
+                <button type="button"
+                        class="login-icon-btn"
+                        id="openAuth"
+                        aria-label="Login or Sign Up"
+                        title="Login / Sign Up">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 21a8 8 0 0 0-16 0"></path>
+                        <circle cx="12" cy="8" r="4"></circle>
+                    </svg>
+                </button>
+            </li>
 
-        <!-- Introduction -->
-        <section class="intro section-padding">
-            <div class="container intro-grid">
+        </ul>
 
-                <div>
-                    <span class="section-label">ABOUT OUR SCHOOL</span>
+        <a class="nav-apply" href="application.html">
+            Apply Now ↗
+        </a>
 
-                    <h2>
-                        Education Beyond<br>
-                        <span>Classrooms.</span>
-                    </h2>
+    </nav>
 
-                    <p>
-                        At St. Xavier's School, we believe
-                        education is more than academic
-                        learning. We encourage curiosity,
-                        creativity, discipline and leadership
-                        to help every student reach their
-                        full potential.
-                    </p>
+</header>
 
-                    <a href="about.html" class="text-link">
-                        Know More About Us →
-                    </a>
-                </div>
 
-                <div class="intro-card">
-                    <h3>Our Commitment</h3>
-                    <p>
-                        Creating a supportive environment
-                        where every student can learn,
-                        grow and succeed.
-                    </p>
-                </div>
+<!-- ================= MAIN CONTENT ================= -->
 
-            </div>
-        </section>
+<main>
 
-        <!-- Highlights -->
-        <section class="highlights section-padding">
-            <div class="container">
+    <!-- HERO SECTION -->
 
-                <div class="section-heading">
-                    <span class="section-label">WHY CHOOSE US</span>
-                    <h2>Learning for a <span>Better Tomorrow</span></h2>
-                </div>
+    <section class="home-hero">
 
-                <div class="feature-grid">
+        <div class="container home-hero-content">
 
-                    <article class="feature-card">
-                        <div class="feature-icon">✦</div>
-                        <h3>Academic Excellence</h3>
-                        <p>
-                            Focused learning and a strong
-                            academic foundation.
-                        </p>
-                    </article>
+            <span class="eyebrow">
+                A PLACE TO LEARN, LEAD & GROW
+            </span>
 
-                    <article class="feature-card">
-                        <div class="feature-icon">◎</div>
-                        <h3>Holistic Development</h3>
-                        <p>
-                            Encouraging sports, arts,
-                            creativity and leadership.
-                        </p>
-                    </article>
+            <h1>
+                Confident minds.<br>
+                <em>Bright futures.</em>
+            </h1>
 
-                    <article class="feature-card">
-                        <div class="feature-icon">◇</div>
-                        <h3>Modern Learning</h3>
-                        <p>
-                            Promoting curiosity through
-                            engaging learning experiences.
-                        </p>
-                    </article>
+            <p>
+                A welcoming school community where strong academic
+                foundations meet creativity, character and the
+                confidence to take on tomorrow.
+            </p>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Admission Call to Action -->
-        <section class="admission-cta">
-            <div class="container cta-content">
-                <div>
-                    <span class="section-label">ADMISSIONS OPEN</span>
-                    <h2>Give Your Child a Brighter Future.</h2>
-                    <p>Take the first step towards a journey of learning and growth.</p>
-                </div>
+            <div class="hero-actions">
 
                 <a href="admissions.html" class="btn btn-gold">
-                    Enquire Now →
+                    Explore Admissions ↗
                 </a>
+
+                <a href="about.html" class="btn btn-outline-light">
+                    Discover Our School
+                </a>
+
             </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-
-            <div>
-                <h3>ST. XAVIER'S SCHOOL</h3>
-                <p>Learning Today. Leading Tomorrow.</p>
-            </div>
-
-            <p>© 2026 St. Xavier's School. All Rights Reserved.</p>
 
         </div>
-    </footer>
 
-    <script src="js/script.js"></script>
+    </section>
 
+
+    <!-- WHY ST. XAVIER'S SECTION -->
+
+    <section class="section section-ivory">
+
+        <div class="container split-intro">
+
+            <div>
+
+                <span class="eyebrow">
+                    WHY ST. XAVIER'S
+                </span>
+
+                <h2>
+                    A learning experience built around
+                    <em>every child.</em>
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p class="lead">
+                    We believe school should do more than prepare
+                    students for examinations. It should help them
+                    think clearly, communicate confidently, act
+                    responsibly and discover what they are capable of.
+                </p>
+
+                <a href="about.html" class="text-link">
+                    Discover our approach ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- THREE FEATURE CARDS -->
+
+        <div class="container feature-grid">
+
+            <article class="feature-card">
+
+                <span>01</span>
+
+                <h3>Strong Foundations</h3>
+
+                <p>
+                    Clear concepts, guided practice and regular
+                    feedback support steady academic progress.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <span>02</span>
+
+                <h3>Skills for Life</h3>
+
+                <p>
+                    Communication, teamwork, creativity and
+                    digital awareness complement classroom learning.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <span>03</span>
+
+                <h3>Values & Character</h3>
+
+                <p>
+                    Respect, responsibility, empathy and discipline
+                    shape a positive school culture.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHORT ADMISSIONS SECTION -->
+
+    <section class="section section-dark">
+
+        <div class="container final-cta">
+
+            <div>
+
+                <span class="eyebrow">
+                    ADMISSIONS OPEN
+                </span>
+
+                <h2>
+                    Every great journey
+                    <em>begins with a step.</em>
+                </h2>
+
+                <p>
+                    Give your child the opportunity to learn,
+                    explore and grow. Connect with our school
+                    to know more about admissions.
+                </p>
+
+            </div>
+
+            <a href="admissions.html" class="btn btn-gold">
+                Explore Admissions ↗
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- SCHOOL INFORMATION -->
+
+        <div class="footer-brand">
+
+            <a class="brand brand-footer" href="index.html">
+
+                <span class="brand-emblem">SX</span>
+
+                <span class="brand-text">
+                    <strong>ST. XAVIER'S</strong>
+                    <small>HIGH SCHOOL</small>
+                </span>
+
+            </a>
+
+            <p>
+                Inspiring young minds through knowledge,
+                creativity, values and meaningful learning.
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div>
+
+            <h3>Explore</h3>
+
+            <a href="about.html">About Us</a>
+
+            <a href="academics.html">Academics</a>
+
+            <a href="facilities.html">Facilities</a>
+
+            <a href="gallery.html">Gallery</a>
+
+        </div>
+
+
+        <!-- ADMISSIONS -->
+
+        <div>
+
+            <h3>Admissions</h3>
+
+            <a href="admissions.html">Admission Process</a>
+
+            <a href="application.html">Apply Now</a>
+
+            <a href="mandatory-disclosure.html">
+                Mandatory Disclosure
+            </a>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+            <h3>Contact Us</h3>
+
+            <p>
+                Kamakhyanagar,<br>
+                Dhenkanal, Odisha, India
+            </p>
+
+            <p>Phone: +91 98765 43210</p>
+
+            <p>Email: info@stxaviers-demo.example</p>
+
+            <a href="contact.html">
+                Get in Touch ↗
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="container footer-bottom">
+
+        <span>
+            © <span id="currentYear"></span>
+            St. Xavier's High School. All rights reserved.
+        </span>
+
+        <span>
+            Learning • Character • Confidence
+        </span>
+
+    </div>
+
+</footer>
+<!-- LOGIN / SIGN UP POPUP -->
+<div class="auth-overlay" id="authOverlay">
+
+    <div class="auth-modal">
+
+        <button type="button" class="auth-close" id="closeAuth">
+            &times;
+        </button>
+
+        <div class="auth-heading">
+
+            <span class="brand-emblem">SX</span>
+
+            <span class="eyebrow">
+                ST. XAVIER'S HIGH SCHOOL
+            </span>
+
+            <h2 id="authTitle">Welcome Back</h2>
+
+            <p id="authSubtitle">
+                Login to continue to your account.
+            </p>
+
+        </div>
+
+        <div class="auth-tabs">
+
+            <button type="button" class="auth-tab active" id="loginTab">
+                Login
+            </button>
+
+            <button type="button" class="auth-tab" id="signupTab">
+                Sign Up
+            </button>
+
+        </div>
+
+        <form id="authForm">
+
+            <div class="auth-field" id="nameField" hidden>
+                <label for="authName">Full Name</label>
+                <input type="text" id="authName"
+                       placeholder="Enter your full name">
+            </div>
+
+            <div class="auth-field">
+                <label for="authEmail">Email Address</label>
+                <input type="email" id="authEmail"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="auth-field">
+                <label for="authPassword">Password</label>
+                <input type="password" id="authPassword"
+                       placeholder="Enter your password"
+                       minlength="6" required>
+            </div>
+
+            <div class="auth-field" id="confirmField" hidden>
+                <label for="authConfirm">Confirm Password</label>
+                <input type="password" id="authConfirm"
+                       placeholder="Confirm your password">
+            </div>
+
+            <button type="submit" class="auth-submit" id="authSubmit">
+                Login
+            </button>
+
+            <p class="auth-message" id="authMessage"
+               role="status" aria-live="polite"></p>
+
+        </form>
+
+        <p class="auth-terms">
+            By continuing, you agree to the school's terms and privacy policy.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20St.%20Xavier%27s%20High%20School."
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact us on WhatsApp"
+   title="Chat with us on WhatsApp">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="currentColor"
+        d="M16 .8A15.1 15.1 0 0 0 3.1 23.7L1 31l7.5-2A15.1 15.1 0 1 0 16 .8Zm0 27.5a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.4 1.2 1.2-4.3-.3-.5A12.4 12.4 0 1 1 16 28.3Zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4 6.3 5.6.9.4 1.6.6 2.1.8.9.3 1.7.3 2.3.2.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5Z"/>
+    </svg>
+
+</a>
 </body>
 </html>
