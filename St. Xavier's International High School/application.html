@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application | St. Xavier's High School</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<nav class="navbar container">
+<a class="brand" href="index.html"><span class="brand-emblem">SX</span><span class="brand-text"><strong>ST. XAVIER'S</strong><small>HIGH SCHOOL</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="academics.html">Academics</a></li>
+<li><a href="facilities.html">Facilities</a></li>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="application.html" class="current-page" aria-current="page">Application</a></li>
+<li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li class="login-icon-item">
+    <button type="button"
+            class="login-icon-btn"
+            id="openAuth"
+            aria-label="Login or Sign Up"
+            title="Login / Sign Up">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+        </svg>
+    </button>
+</li>
+</ul>
+<a class="nav-apply" href="application.html">Apply Now ↗</a>
+</nav>
+</header>
+<main>
+<section class="inner-hero">
+<div class="container">
+<span class="eyebrow">APPLICATION ENQUIRY</span>
+<h1>Take the first step <em>with confidence.</em></h1>
+<p>Share your details and learn about the next stage of the admission process.</p>
+<div class="breadcrumb"><a href="index.html">Home</a> / Application</div>
+</div>
+</section>
+
+<section class="section section-ivory">
+<div class="container application-layout">
+<div>
+<span class="eyebrow">BEGIN YOUR JOURNEY</span>
+<h2>Welcome to <em>St. Xavier's.</em></h2>
+<p class="lead">We are delighted that you are considering our school. Complete this enquiry form to start a conversation with our admissions team.</p>
+<div class="application-note">
+<h3>Before You Submit</h3>
+<p>This is an initial enquiry form, not an official admission confirmation. Please do not submit sensitive documents through this demonstration form.</p>
+</div>
+</div>
+
+<form class="application-form" id="applicationForm">
+<h3>Student Application Enquiry</h3>
+<div class="form-row">
+<div class="form-field"><label for="studentName">Student's Full Name *</label><input id="studentName" name="studentName" type="text" required></div>
+<div class="form-field"><label for="dob">Date of Birth *</label><input id="dob" name="dob" type="date" required></div>
+</div>
+<div class="form-row">
+<div class="form-field">
+<label for="classApplying">Class Applying For *</label>
+<select id="classApplying" name="classApplying" required>
+<option value="">Select Class</option>
+<option>Nursery</option><option>LKG</option><option>UKG</option>
+<option>Class I</option><option>Class II–V</option>
+<option>Class VI–VIII</option><option>Class IX–X</option>
+<option>Other / Please Discuss</option>
+</select>
+</div>
+<div class="form-field"><label for="academicYear">Academic Year *</label><input id="academicYear" name="academicYear" placeholder="e.g. 2026–27" required></div>
+</div>
+<div class="form-row">
+<div class="form-field"><label for="parentName">Parent / Guardian Name *</label><input id="parentName" name="parentName" required></div>
+<div class="form-field"><label for="applicationPhone">Phone / WhatsApp *</label><input id="applicationPhone" name="phone" type="tel" required></div>
+</div>
+<div class="form-field"><label for="applicationEmail">Email Address *</label><input id="applicationEmail" name="email" type="email" required></div>
+<div class="form-field"><label for="previousSchool">Previous School (if applicable)</label><input id="previousSchool" name="previousSchool"></div>
+<div class="form-field"><label for="applicationMessage">Additional Information</label><textarea id="applicationMessage" name="message" rows="4" placeholder="Write your enquiry here..."></textarea></div>
+<label class="consent"><input type="checkbox" required> I confirm that the information provided is accurate and may be used to respond to this enquiry.</label>
+<button class="btn btn-dark" type="submit">Submit Enquiry ↗</button>
+<p id="applicationMessageStatus" class="form-status" role="status"></p>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div><a class="brand brand-footer" href="index.html"><span class="brand-emblem">SX</span><span class="brand-text"><strong>ST. XAVIER'S</strong><small>HIGH SCHOOL</small></span></a><p>Learning • Character • Confidence</p></div>
+<div><h3>Explore</h3><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="facilities.html">Facilities</a><a href="gallery.html">Gallery</a></div>
+<div><h3>Admissions</h3><a href="admissions.html">Admission Process</a><a href="application.html">Apply Now</a><a href="mandatory-disclosure.html">Mandatory Disclosure</a></div>
+
+<div>
+  <h3>Contact</h3>
+  <p>At Jiridamali, PO Kamakhyanagar, Dhenkanal, Odisha – 759018</p>
+  <p>Phone: +91 98765 43210</p>
+  <p>Email: info@stxaviers-demo.example</p>
+  <a href="contact.html">Contact our team ↗</a>
+</div>
+
+<div class="container footer-bottom">© <span id="currentYear"></span> St. Xavier's High School. All rights reserved.</div>
+</footer>
+<!-- LOGIN / SIGN UP POPUP -->
+<div class="auth-overlay" id="authOverlay">
+
+    <div class="auth-modal">
+
+        <button type="button" class="auth-close" id="closeAuth">
+            &times;
+        </button>
+
+        <div class="auth-heading">
+
+            <span class="brand-emblem">SX</span>
+
+            <span class="eyebrow">
+                ST. XAVIER'S HIGH SCHOOL
+            </span>
+
+            <h2 id="authTitle">Welcome Back</h2>
+
+            <p id="authSubtitle">
+                Login to continue to your account.
+            </p>
+
+        </div>
+
+        <div class="auth-tabs">
+
+            <button type="button" class="auth-tab active" id="loginTab">
+                Login
+            </button>
+
+            <button type="button" class="auth-tab" id="signupTab">
+                Sign Up
+            </button>
+
+        </div>
+
+        <form id="authForm">
+
+            <div class="auth-field" id="nameField" hidden>
+                <label for="authName">Full Name</label>
+                <input type="text" id="authName"
+                       placeholder="Enter your full name">
+            </div>
+
+            <div class="auth-field">
+                <label for="authEmail">Email Address</label>
+                <input type="email" id="authEmail"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="auth-field">
+                <label for="authPassword">Password</label>
+                <input type="password" id="authPassword"
+                       placeholder="Enter your password"
+                       minlength="6" required>
+            </div>
+
+            <div class="auth-field" id="confirmField" hidden>
+                <label for="authConfirm">Confirm Password</label>
+                <input type="password" id="authConfirm"
+                       placeholder="Confirm your password">
+            </div>
+
+            <button type="submit" class="auth-submit" id="authSubmit">
+                Login
+            </button>
+
+            <p class="auth-message" id="authMessage"
+               role="status" aria-live="polite"></p>
+
+        </form>
+
+        <p class="auth-terms">
+            By continuing, you agree to the school's terms and privacy policy.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20St.%20Xavier%27s%20High%20School."
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact us on WhatsApp"
+   title="Chat with us on WhatsApp">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="currentColor"
+        d="M16 .8A15.1 15.1 0 0 0 3.1 23.7L1 31l7.5-2A15.1 15.1 0 1 0 16 .8Zm0 27.5a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.4 1.2 1.2-4.3-.3-.5A12.4 12.4 0 1 1 16 28.3Zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4 6.3 5.6.9.4 1.6.6 2.1.8.9.3 1.7.3 2.3.2.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5Z"/>
+    </svg>
+
+</a>
+</body>
+</html>
